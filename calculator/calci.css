@@ -97,7 +97,7 @@ h2{
     display: grid;
     grid-template-columns: auto auto auto;
     gap:0.5px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 
@@ -125,7 +125,7 @@ h2{
     right: 2px;
     display: flex;
     border-radius: 5px;
-    flex-direction: column;
+    flex-direction:column;
 }
 
 
@@ -135,7 +135,7 @@ h2{
     background-image: linear-gradient(white, black);
     border: 1px solid black;
     border-radius: 100px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     width: 100px;
     height: 100px;
     padding: 20px;
@@ -144,50 +144,19 @@ h2{
     text-align: center;   
 } 
 
-#op1{
-    position: absolute;
-    left: 15px;
-    top: 6px;
-    /* justify-content: start; */
+.opr{
+    height:60%;
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 18px;
+    align-items: center;
+    justify-content:center ;
 }
-#op2{
-    position: absolute;
-    right: 20px;
-    top:75px;
-    width: 105px;
-    height: 105px;
-    border-radius: 105px;
-
-    /* justify-content: end; */
-}
-#op3{
-    position: absolute;
-    left: 18px;
-    top:160px;
-    width: 102px;
-    height: 102px;
-    border-radius: 102px;
-    /* justify-content: start; */
-
-}
-#op4{
-    position: absolute;
-    right: 20px;
-    top: 225px;
-    width: 105px;
-    height: 105px;
-    border-radius: 105px;
-
-    /* justify-content: end; */
-
-}
-#op5{
-    position: absolute;
-    right: 105px;
-    width: 120px;
-    height: 120px;
-    border-radius: 120px;
-    bottom: 15px;
-    /* justify-content: center; */
-
+.eq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 75px;
 }
