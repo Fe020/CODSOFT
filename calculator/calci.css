@@ -81,6 +81,7 @@ h2{
     border-radius: 5px;
     font-size: 70px;
     font-family:'Courier New', Courier, monospace;
+    resize: none;
 }
 
 
