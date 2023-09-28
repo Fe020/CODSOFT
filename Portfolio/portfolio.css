@@ -12,6 +12,25 @@ h1{
     text-shadow: 3px 3px 5px black;
     font-kerning:auto; 
 }
+
+html{
+    scroll-behavior: smooth;
+}
+#top{
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    padding: 5px 8px;
+    background-color: red;
+    color: white;
+    font-family: cursive;
+    font-size: 15px;
+}
+
+#top:hover{
+    background-color: whitesmoke;
+    color: red;
+}
 h2{
     font-size: 55px;
     font-family: serif;
@@ -109,7 +128,7 @@ h3{
     justify-content: left;
 }
 .lan{
-    background-image: radial-gradient(red,yellow);
+    background:white;
     border: 1px solid black;
     width: 40px;
     height: 40px;
@@ -119,7 +138,9 @@ h3{
     display:flex;
     align-items: center;
     justify-content: center;
-    color: aliceblue;
+    color: darkred;
+    font-family: cursive;
+
 }
 
 .bar{
@@ -220,14 +241,14 @@ h3{
 a{
     text-decoration: none;
     color:aliceblue;
-    background-color:rgba(139, 0, 0, 0.783);
+    background-color:rgba(255, 0, 0, 0.833);
     padding: 5px;
     border: 1px solid black;
     border-radius: 3px;
 }
 a:hover{
     color:aliceblue ;
-    background-color: rgb(139, 0, 0);
+    background-color: rgb(203, 0, 0);
 }
 
 
@@ -255,4 +276,20 @@ a:hover{
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+}
+
+#hobbies_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 80%;
+    background-color: violet;
+    gap: 5%;
+}
+.hobbies_Box{
+    height: 80%;
+    width: 25%;
+    background-color: black;
+    color: aliceblue;
 }
