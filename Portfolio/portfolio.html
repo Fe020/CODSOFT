@@ -16,7 +16,7 @@
                 <h3 style="line-height: 35px;">Programmer / Developer / Youtuber</h3></div>
         </div>
         <div id="pic" >
-            <img src="Ayush (2).jpg" alt="Ayush Pic Here" style="width: 100%;">
+            <img src="Ayush__2_-removebg-preview.png" alt="Ayush Pic Here" style="width: 100%;">
         </div>
     </div>
 
@@ -131,15 +131,133 @@
     </div>
     
     <div id="p6" class="page">
-        <h2 style="line-height: 170px;padding-top: 50px;">Hobbies</h2>      
+        <h2 style="line-height: 170px;padding-top: 50px;">Hobbies</h2>
         <div id="hobbies_container">
-            <div class="hobbies_Box">A</div>
-            <div class="hobbies_Box">B</div>
-            <div class="hobbies_Box">C</div>
+            <div class="image-container">
+            <br><br>           
+            <h3> Video Editing</h3><br><br>
+            <img src="vid_ed_1.jpg" alt="Initial Image">
+                <div class="slideshow">
+                    <img src="vid_ed_1.jpg" alt="Image 1">
+                    <img src="vid_ed_4.jpg" alt="Image 2">
+                </div>
+            </div>
+
+            <div class="image-container">
+            <br><br>           
+            <h3> Photograpgy</h3><br><br>
+                <img src="photograpgy_1.jpg" alt="Initial Image">
+                <div class="slideshow">
+                    <img src="photograpgy_1.jpg" alt="Image 1">
+                    <img src="photograpgy_2.jpg" alt="Image 2">
+                </div>
+            </div>
+
+
+            <div class="image-container">
+                <br><br>
+                <h3> Piano</h3><br><br>
+                <img src="piano.jpg" alt="Initial Image">
+                <div class="slideshow">
+                    <img src="piano.jpg" alt="Image 1">
+                    <img src="piano_2.jpg" alt="Image 2">
+                </div>
+            </div>
+
+
+            <div class="image-container">
+                <br><br>
+                <h3> Chess</h3><br><br>
+                <img src="chess_1.jpg" alt="Initial Image">
+                <div class="slideshow">
+                    <img src="chess_1.jpg" alt="Image 1">
+                    <img src="chess_2.jpg" alt="Image 2">
+                </div>
+            </div>
+
+
+            <div id="other-hobby" class="image-container">
+                <br><br>
+                <h3> Other</h3>
+                <br><br>
+                <img src="pubg.jpg" alt="Initial Image">
+                <div class="slideshow">
+                    <img src="pubg.jpg" alt="Image 1">
+                    <h3>Gaming</h3>
+                    <img src="sudoku.jpg" alt="Image 2">
+                    <h3>Sudoku</h3>
+                </div>
+            </div>
+
+            <!-- alternare -->
+            <!-- <div id="other-hobby" class="test"><br><br>
+                <h3> Other</h3>
+                <br><br>
+                <img src="pubg.jpg" alt="Initial Image">
+                <h3>Gaming</h3>
+                    <img src="sudoku.jpg" alt="Image 2">
+                    <h3>Sudoku</h3>
+                </div>
+            </div> -->
         </div>
-        
-
     </div>
+    <div id="p7" class="page" > 
+       <h2 style="line-height: 170px;padding-top: 50px;">Contact Me</h2>
 
+       <div class="write-here">
+        <center><form action="" >
+            <h4>Name</h4>
+        <textarea> </textarea>
+        <h4>E-mail</h4> 
+        <textarea > </textarea>
+        <h4>Message</h4>
+        <textarea style="height: 130px;"></textarea>
+        </form>
+        <br>
+        <button>Submit</button></center>
+       </div>
+       <div class="dm">
+        <br>
+        <h3>Or just drop a "hi" here:</h3>
+        <div class="dmcontainer">
+            <a href="https://www.instagram.com/aayush.020/reels/" target="_blank"><img src="insta.png" alt=""></a>
+            
+            <a href="https://www.linkedin.com/in/aayush-kumar-40a976246" target="_blank"><img src="Linkedin.png" alt=""></a>
+            
+            <a href="mailto: aak41375@gmail.com" target="_blank"><img src="gmail.png" alt="gmail"></a>
+            
+            <a href="https://github.com/Fe020" target="_blank"><img src="github.png" alt="github"></a>
+            
+            <a href="https://youtube.com/@future_engineer020?si=EXS8PtWQDA9WfjXz" target="_blank"><img src="youtube.png" alt=""></a>
+        
+        </div>
+       </div>
+    </div>
+    <footer>
+        <h3>&copy; all copyrights of this page belongs to Ayush</h3>
+    </footer>
+
+
+
+    <script>document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("h2-enter");
+            } else {
+              entry.target.classList.remove("h2-enter");
+            }
+          });
+        }, { threshold: 0.5 }); // Adjust the threshold based on your needs
+      
+        const h2Elements = document.querySelectorAll(".page h2");
+      
+        h2Elements.forEach(h2 => {
+          observer.observe(h2);
+        });
+      });
+
+      
+      </script>
 </body>
 </html>
