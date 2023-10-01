@@ -12,7 +12,9 @@ header {
   background:linear-gradient(to right,rgb(40, 47, 52),rgb(10, 84, 116));
   color: #fff;
   justify-content: space-between;
+  transition: all ease .3s;
 }
+
 a:hover{
   transform: scale(1.03);
 }
@@ -42,15 +44,15 @@ header a:hover {
 
 .logodiv{
   position: relative;
+  align-items: center;
+  justify-content: center;
   left: 10px;
   width: 40px;
 }
 .logo{
   width: 100%;
-  filter: grayscale(84%) saturate(100%);
-  border:2px solid white;
-  border-radius: 2px;
   transition: all ease .3s;
+  filter: drop-shadow(1px 1px 3px black);
 }
 .logo:hover{
   transform: scale(1.5);
@@ -59,11 +61,15 @@ header a:hover {
   text-decoration: none;
 font-size: 43px;
 margin: 0px 44px;
-color: white;
+color: #ecee5e;
 font-family: cursive;
+transition: all ease .3s;
+}
+.brand:hover{
+  transform: scale(1.03);
 }
 .active{
-  left: 500px;
+  left: 675px;
   position: relative;
 }
 
@@ -74,8 +80,20 @@ font-family: cursive;
   text-align:left;
   width:35%;
 }
+
+.hero p{
+  transition: all ease 0.3s;
+}
+
+.hero p:hover{
+  transform: scale(1.03);
+}
 .sub_head{
-  color:#ecee5e;
+  color:#68fe0e;
+  transition: all ease 0.1s;
+}
+.sub_head:hover{
+  transform: scale(1.05);
 }
 .cta-button {
   display: inline-block;
@@ -132,37 +150,6 @@ font-family: cursive;
 .feature {
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 
 *{
   margin: 0;
@@ -223,12 +210,12 @@ form button:hover{
 .col a{
   text-decoration: none;
   color: black;
-  width: 55px;
-  margin: 5px;
+  width: 62px;
+  margin:  3px 0px;
   border: 1px solid black;
   border-radius: 3px;
   text-align: center;
-  font-size: 10px;
+  font-size: 14px;
   background-color: azure;
   transition: all ease .2s;
 }
@@ -303,6 +290,18 @@ form .fa{
   left:10px;
   animation: moving 2s linear infinite;
 }
+.social-icons .fa{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size:2rem;
+    color: #000;
+    background:#fff ;
+    margin-right: 15px;
+    cursor: pointer;
+}
 @keyframes moving {
   0%{
       left:-20px;}
@@ -324,18 +323,6 @@ form .fa{
       }
   }
   
-  .social-icons.fa{
-      width:60px;
-      height: 60px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 40px;
-      font-size:2rem;
-      color: #000;
-      background:#fff ;
-      margin-right: 15px;
-      cursor: pointer;
-  }
   
   .copyright{
       text-align: center;
